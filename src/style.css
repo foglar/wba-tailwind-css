@@ -2,6 +2,6 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #ffa3f3;
-  --font-main: "Tuffy";
+	--color-primary: #74c69d;
+  
 }

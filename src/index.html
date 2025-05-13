@@ -1,11 +1,169 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline font-main">Hello world!</h1>
-  </body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Start Page</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body
+		class="bg-primary min-h-screen flex flex-col items-center justify-center"
+	>
+		<div class="w-full bg-green-400 text-white p-4 space-y-6">
+			<nav class="flex justify-between items-center">
+				<div class="flex items-center space-x-2">
+					<img class="w-8 h-8" src="../logo.svg" alt="Logo" />
+					<span class="text-xl font-bold">Start</span>
+				</div>
+				<button>
+					<svg
+						class="w-6 h-6 text-white"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M4 6h16M4 12h16M4 18h16"
+						/>
+					</svg>
+				</button>
+			</nav>
+			<div class="flex flex-col md:flex-row">
+				<div class="flex justify-center">
+					<img
+						src="../Image1.svg"
+						alt="Illustration"
+						class="w-full max-w-xs rounded"
+					/>
+				</div>
+
+				<div class="text-center">
+					<p class="uppercase text-sm tracking-widest font-semibold">
+						Welcome
+					</p>
+					<h1 class="text-2xl font-bold mt-2">
+						Lorem ipsum dolor sit amet consectetur
+					</h1>
+					<p class="text-sm text-white mt-4">
+						Lorem ipsum, dolor sit amet consectetur adipisicing
+						elit. Suscipit nemo hic quos, ab, dolor aperiam nobis
+						cum est eos error ipsum, voluptate culpa nesciunt
+						delectus iste?
+					</p>
+				</div>
+
+				<div class="text-center">
+					<button
+						class="bg-white text-green-500 font-semibold py-2 px-6 rounded shadow-md hover:bg-gray-100"
+					>
+						Explore
+					</button>
+				</div>
+			</div>
+		</div>
+		<section class="bg-white text-center py-10 px-6">
+			<!-- Section Header -->
+			<p
+				class="text-green-600 uppercase tracking-widest font-semibold mb-2"
+			>
+				Partners
+			</p>
+			<h2 class="text-lg font-bold mb-2">Lorem Ipsum Dolor</h2>
+			<p class="text-gray-600 text-sm mb-6">
+				Lorem ipsum, dolor sit amet consectetur<br />adipisicing elit.
+			</p>
+
+			<!-- Logos -->
+			<div class="space-y-6 flex flex-col md:flex-row items-center gap-8">
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+					alt="Google"
+					class="h-6 mx-auto"
+				/>
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+					alt="Microsoft"
+					class="h-6 mx-auto"
+				/>
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg"
+					alt="Airbnb"
+					class="h-8 mx-auto"
+				/>
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+					alt="Facebook"
+					class="h-8 mx-auto"
+				/>
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+					alt="Spotify"
+					class="h-6 mx-auto"
+				/>
+			</div>
+
+			<!-- Button -->
+			<button
+				class="mt-8 bg-black text-white font-semibold py-2 px-6 rounded hover:bg-gray-800"
+			>
+				Learn More
+			</button>
+		</section>
+		<section>
+			<section class="bg-white px-6 py-10 space-y-10">
+				<!-- Card 1 -->
+				<div class="flex flex-col md:flex-row items-center gap-6">
+					<img
+						src="../ilu2.svg"
+						alt="Illustration 1"
+						class="w-32 h-32 object-contain"
+					/>
+					<div>
+						<h3 class="text-lg font-semibold mb-2">
+							Lorem ipsum dolor sit amet consectetur
+						</h3>
+						<p class="text-gray-600 text-sm mb-4">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Suscipit nemo hic quos, ab, dolor aperiam
+							nobis cum est eos error ipsum, voluptate culpa
+							nesciunt delectus iste?
+						</p>
+						<button
+							class="bg-black text-white px-5 py-2 rounded hover:bg-gray-800"
+						>
+							Learn More
+						</button>
+					</div>
+				</div>
+
+				<!-- Card 2 -->
+				<div class="flex flex-col md:flex-row items-center gap-6">
+					<img
+						src="../ilu1.svg"
+						alt="Illustration 2"
+						class="w-32 h-32 object-contain"
+					/>
+					<div>
+						<h3 class="text-lg font-semibold mb-2">
+							Lorem ipsum dolor sit amet consectetur
+						</h3>
+						<p class="text-gray-600 text-sm mb-4">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Suscipit nemo hic quos, ab, dolor aperiam
+							nobis cum est eos error ipsum, voluptate culpa
+							nesciunt delectus iste?
+						</p>
+						<button
+							class="bg-black text-white px-5 py-2 rounded hover:bg-gray-800"
+						>
+							Learn More
+						</button>
+					</div>
+				</div>
+			</section>
+		</section>
+	</body>
 </html>
