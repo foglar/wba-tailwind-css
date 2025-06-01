@@ -5,13 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Start Page</title>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="./output.css" />
 	</head>
-	<body class="bg-primary min-h-screen flex flex-col">
-		<div class="w-full bg-green-400 text-white p-4">
+	<body class="min-h-screen flex flex-col">
+		<div class="w-full bg-primary text-white p-4">
 			<nav class="flex justify-between items-center max-w-7xl mx-auto">
 				<div class="flex items-center space-x-2">
 					<img class="w-8 h-8" src="../logo.svg" alt="Logo" />
-					<span class="text-xl font-bold">Start</span>
+					<span class="text-xl font-work-sans">Start</span>
 				</div>
 				<button aria-label="Menu">
 					<svg
@@ -33,13 +34,15 @@
 				class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between mt-10 gap-10 px-4"
 			>
 				<div class="md:w-1/3 text-center md:text-left space-y-4">
-					<p class="uppercase text-sm tracking-widest font-semibold">
+					<p
+						class="uppercase text-sm tracking-widest font-work-sans font-bold"
+					>
 						Welcome
 					</p>
-					<h1 class="text-3xl md:text-4xl font-bold">
+					<h1 class="text-3xl md:text-4xl font-crimson font-bold">
 						Lorem ipsum dolor sit amet consectetur
 					</h1>
-					<p class="text-sm text-white">
+					<p class="text-sm text-white font-work-sans">
 						Lorem ipsum, dolor sit amet consectetur adipisicing
 						elit. Suscipit nemo hic quos, ab, dolor aperiam nobis
 						cum est eos error ipsum, voluptate culpa nesciunt
@@ -47,7 +50,7 @@
 					</p>
 					<div class="mt-4">
 						<button
-							class="bg-white text-green-500 font-semibold py-2 px-6 rounded shadow-md hover:bg-gray-100"
+							class="bg-white text-black font-work-sans py-2 px-6 rounded shadow-md hover:bg-gray-100"
 						>
 							Explore
 						</button>
@@ -66,14 +69,14 @@
 
 		<section class="bg-white text-center py-10 px-6">
 			<p
-				class="text-green-600 uppercase tracking-widest font-semibold mb-2"
+				class="text-primary uppercase tracking-widest font-bold font-work-sans mb-2"
 			>
 				Partners
 			</p>
-			<h2 class="text-xl md:text-2xl font-bold mb-2">
+			<h2 class="text-3xl md:text-3xl font-bold font-crimson mb-2">
 				Lorem Ipsum Dolor
 			</h2>
-			<p class="text-gray-600 text-sm mb-6">
+			<p class="text-gray-600 text-lg font-work-sans mb-6">
 				Lorem ipsum, dolor sit amet consectetur<br />adipisicing elit.
 			</p>
 
@@ -88,7 +91,7 @@
 			</div>
 
 			<button
-				class="mt-8 bg-black text-white font-semibold py-2 px-6 rounded hover:bg-gray-800"
+				class="mt-8 bg-black text-white font-work-sans py-2 px-6 rounded hover:bg-gray-800"
 			>
 				Learn More
 			</button>
@@ -102,16 +105,16 @@
 					class="object-contain"
 				/>
 				<div class="text-center md:text-left">
-					<h3 class="text-lg font-semibold mb-2">
+					<h3 class="text-3xl font-bold font-crimson mb-2">
 						Lorem ipsum dolor sit amet consectetur
 					</h3>
-					<p class="text-gray-600 text-sm mb-4">
+					<p class="text-gray-600 font-work-sans text-sm mb-4">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Suscipit nemo hic quos, ab, dolor aperiam nobis cum est
 						eos error ipsum, voluptate culpa nesciunt delectus iste?
 					</p>
 					<button
-						class="bg-black text-white px-5 py-2 rounded hover:bg-gray-800"
+						class="bg-black text-white px-5 py-2 rounded hover:bg-gray-800 font-work-sans"
 					>
 						Learn More
 					</button>
@@ -124,16 +127,16 @@
 					class="object-contain"
 				/>
 				<div class="text-center md:text-left">
-					<h3 class="text-lg font-semibold mb-2">
+					<h3 class="text-3xl font-bold font-crimson mb-2">
 						Lorem ipsum dolor sit amet consectetur
 					</h3>
-					<p class="text-gray-600 text-sm mb-4">
+					<p class="text-gray-600 font-work-sans text-sm mb-4">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Suscipit nemo hic quos, ab, dolor aperiam nobis cum est
 						eos error ipsum, voluptate culpa nesciunt delectus iste?
 					</p>
 					<button
-						class="bg-black text-white px-5 py-2 rounded hover:bg-gray-800"
+						class="bg-black text-white px-5 py-2 rounded hover:bg-gray-800 font-work-sans"
 					>
 						Learn More
 					</button>
@@ -143,14 +146,18 @@
 		<section class="bg-gray-50 py-12">
 			<div class="max-w-7xl mx-auto px-4 text-center">
 				<h2
-					class="text-base text-green-600 font-semibold tracking-wide uppercase"
+					class="text-base text-primary font-semibold tracking-wide uppercase font-work-sans font-bold"
 				>
 					Team
 				</h2>
-				<p class="mt-2 text-3xl font-extrabold text-gray-900">
+				<p
+					class="mt-2 text-3xl font-extrabold text-gray-900 font-crimson font-bold"
+				>
 					Our Talents
 				</p>
-				<p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+				<p
+					class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto font-work-sans"
+				>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				</p>
 			</div>
@@ -167,10 +174,10 @@
 							alt="Peg Legge"
 							class="w-28 h-28 rounded-full border-2 border-gray-200"
 						/>
-						<h3 class="mt-4 text-xl font-semibold text-gray-900">
+						<h3 class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson">
 							Peg Legge
 						</h3>
-						<p class="mt-1 text-sm text-gray-500 uppercase">CEO</p>
+						<p class="mt-1 text-sm text-gray-500 font-work-sans uppercase">CEO</p>
 					</div>
 
 					<div
@@ -181,10 +188,10 @@
 							alt="Richard Guerra"
 							class="w-28 h-28 rounded-full border-2 border-gray-200"
 						/>
-						<h3 class="mt-4 text-xl font-semibold text-gray-900">
+						<h3 class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson">
 							Richard Guerra
 						</h3>
-						<p class="mt-1 text-sm text-gray-500 uppercase">CTO</p>
+						<p class="mt-1 text-sm text-gray-500 uppercase font-work-sans">CTO</p>
 					</div>
 
 					<div
@@ -195,10 +202,10 @@
 							alt="Alexandra Stolz"
 							class="w-28 h-28 rounded-full border-2 border-gray-200"
 						/>
-						<h3 class="mt-4 text-xl font-semibold text-gray-900">
+						<h3 class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson">
 							Alexandra Stolz
 						</h3>
-						<p class="mt-1 text-sm text-gray-500 uppercase">
+						<p class="mt-1 text-sm text-gray-500 font-work-sans uppercase">
 							Designer
 						</p>
 					</div>
@@ -211,10 +218,10 @@
 							alt="Janet Bray"
 							class="w-28 h-28 rounded-full border-2 border-gray-200"
 						/>
-						<h3 class="mt-4 text-xl font-semibold text-gray-900">
+						<h3 class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson">
 							Janet Bray
 						</h3>
-						<p class="mt-1 text-sm text-gray-500 uppercase">
+						<p class="mt-1 text-sm text-gray-500 font-work-sans uppercase">
 							Developer
 						</p>
 					</div>
@@ -223,7 +230,7 @@
 				<div class="mt-10 text-center">
 					<a
 						href="#learn-more"
-						class="inline-block px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-green-600 hover:bg-green-700 transition"
+						class="inline-block px-8 py-3 border border-transparent bg-black text-white px-5 py-2 rounded hover:bg-gray-800"
 					>
 						Learn More
 					</a>
@@ -231,34 +238,66 @@
 			</div>
 		</section>
 		<footer class="w-full">
-			<div class="bg-green-500 text-white py-8">
-				<div class="flex justify-center space-x-6 mb-4">
-					<a href="#" aria-label="Facebook" class="hover:opacity-75">
-						<img src="../sm_facebook.svg" />
-					</a>
-					<a href="#" aria-label="Instagram" class="hover:opacity-75">
-						<img src="../sm_instagram.svg" />
-					</a>
-					<a href="#" aria-label="Twitter" class="hover:opacity-75">
-						<img src="../sm_twitter.svg" />
-					</a>
-					<a href="#" aria-label="Pinterest" class="hover:opacity-75">
-						<img src="../sm_pinterest.svg" />
-					</a>
-					<a href="#" aria-label="TikTok" class="hover:opacity-75">
-						<img src="../sm_tiktok.svg" />
-					</a>
-					<a href="#" aria-label="WhatsApp" class="hover:opacity-75">
-						<img src="../sm_whatsapp.svg" />
-					</a>
-					<a href="#" aria-label="YouTube" class="hover:opacity-75">
-						<img src="../sm_yt.svg" />
-					</a>
-				</div>
+			<div class="bg-primary text-white py-8 px-4">
+				<div
+					class="flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0"
+				>
+					<div class="flex justify-center md:justify-start space-x-6">
+						<a
+							href="#"
+							aria-label="Facebook"
+							class="hover:opacity-75"
+						>
+							<img src="../sm_facebook.svg" alt="Facebook" />
+						</a>
+						<a
+							href="#"
+							aria-label="Instagram"
+							class="hover:opacity-75"
+						>
+							<img src="../sm_instagram.svg" alt="Instagram" />
+						</a>
+						<a
+							href="#"
+							aria-label="Twitter"
+							class="hover:opacity-75"
+						>
+							<img src="../sm_twitter.svg" alt="Twitter" />
+						</a>
+						<a
+							href="#"
+							aria-label="Pinterest"
+							class="hover:opacity-75"
+						>
+							<img src="../sm_pinterest.svg" alt="Pinterest" />
+						</a>
+						<a
+							href="#"
+							aria-label="TikTok"
+							class="hover:opacity-75"
+						>
+							<img src="../sm_tiktok.svg" alt="TikTok" />
+						</a>
+						<a
+							href="#"
+							aria-label="WhatsApp"
+							class="hover:opacity-75"
+						>
+							<img src="../sm_whatsapp.svg" alt="WhatsApp" />
+						</a>
+						<a
+							href="#"
+							aria-label="YouTube"
+							class="hover:opacity-75"
+						>
+							<img src="../sm_yt.svg" alt="YouTube" />
+						</a>
+					</div>
 
-				<p class="text-center md:text-right text-sm">
-					© Start, 2022. All rights reserved.
-				</p>
+					<p class="text-center md:text-right text-sm">
+						© Start, 2022. All rights reserved.
+					</p>
+				</div>
 			</div>
 		</footer>
 	</body>
