@@ -9,12 +9,26 @@
 	</head>
 	<body class="min-h-screen flex flex-col">
 		<div class="w-full bg-primary text-white p-4">
-			<nav class="flex justify-between items-center max-w-7xl mx-auto">
+			<nav
+				class="flex justify-between items-center max-w-7xl mx-auto px-4 py-3"
+			>
 				<div class="flex items-center space-x-2">
 					<img class="w-8 h-8" src="../logo.svg" alt="Logo" />
-					<span class="text-xl font-work-sans">Start</span>
+					<span class="text-xl font-work-sans text-white">Start</span>
 				</div>
-				<button aria-label="Menu">
+
+				<div class="hidden md:flex space-x-6 text-white">
+					<a href="#">Home</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Services</a>
+					<a href="#">Contact</a>
+				</div>
+
+				<button
+					class="md:hidden"
+					aria-label="Menu"
+					onclick="toggleMenu()"
+				>
 					<svg
 						class="w-6 h-6 text-white"
 						fill="none"
@@ -30,6 +44,24 @@
 					</svg>
 				</button>
 			</nav>
+
+			<div
+				id="mobileMenu"
+				class="md:hidden px-4 pb-4 space-y-2 text-white hidden"
+			>
+				<a href="#" class="block hover:underline">Home</a>
+				<a href="#" class="block hover:underline">Portfolio</a>
+				<a href="#" class="block hover:underline">Services</a>
+				<a href="#" class="block hover:underline">Contact</a>
+			</div>
+
+			<script>
+				function toggleMenu() {
+					const menu = document.getElementById("mobileMenu");
+					menu.classList.toggle("hidden");
+				}
+			</script>
+
 			<div
 				class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between mt-10 gap-10 px-4"
 			>
@@ -174,10 +206,16 @@
 							alt="Peg Legge"
 							class="w-28 h-28 rounded-full border-2 border-gray-200"
 						/>
-						<h3 class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson">
+						<h3
+							class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson"
+						>
 							Peg Legge
 						</h3>
-						<p class="mt-1 text-sm text-gray-500 font-work-sans uppercase">CEO</p>
+						<p
+							class="mt-1 text-sm text-gray-500 font-work-sans uppercase"
+						>
+							CEO
+						</p>
 					</div>
 
 					<div
@@ -188,10 +226,16 @@
 							alt="Richard Guerra"
 							class="w-28 h-28 rounded-full border-2 border-gray-200"
 						/>
-						<h3 class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson">
+						<h3
+							class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson"
+						>
 							Richard Guerra
 						</h3>
-						<p class="mt-1 text-sm text-gray-500 uppercase font-work-sans">CTO</p>
+						<p
+							class="mt-1 text-sm text-gray-500 uppercase font-work-sans"
+						>
+							CTO
+						</p>
 					</div>
 
 					<div
@@ -202,10 +246,14 @@
 							alt="Alexandra Stolz"
 							class="w-28 h-28 rounded-full border-2 border-gray-200"
 						/>
-						<h3 class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson">
+						<h3
+							class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson"
+						>
 							Alexandra Stolz
 						</h3>
-						<p class="mt-1 text-sm text-gray-500 font-work-sans uppercase">
+						<p
+							class="mt-1 text-sm text-gray-500 font-work-sans uppercase"
+						>
 							Designer
 						</p>
 					</div>
@@ -218,10 +266,14 @@
 							alt="Janet Bray"
 							class="w-28 h-28 rounded-full border-2 border-gray-200"
 						/>
-						<h3 class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson">
+						<h3
+							class="mt-4 text-xl font-semibold text-gray-900 font-bold font-crimson"
+						>
 							Janet Bray
 						</h3>
-						<p class="mt-1 text-sm text-gray-500 font-work-sans uppercase">
+						<p
+							class="mt-1 text-sm text-gray-500 font-work-sans uppercase"
+						>
 							Developer
 						</p>
 					</div>
